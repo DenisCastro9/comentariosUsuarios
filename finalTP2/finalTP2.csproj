@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A682E11D-198F-4810-86B5-A53E5AA8D607}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>finalTP2</RootNamespace>
+    <AssemblyName>finalTP2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="altaRedSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="altaRedSocial.Designer.cs">
+      <DependentUpon>altaRedSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alta_comentario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alta_comentario.Designer.cs">
+      <DependentUpon>alta_comentario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alta_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alta_usuario.Designer.cs">
+      <DependentUpon>alta_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bajaRedSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bajaRedSocial.Designer.cs">
+      <DependentUpon>bajaRedSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baja_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baja_usuario.Designer.cs">
+      <DependentUpon>baja_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultar_comentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultar_comentarios.Designer.cs">
+      <DependentUpon>consultar_comentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultar_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultar_usuarios.Designer.cs">
+      <DependentUpon>consultar_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finalTP2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalTP2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalTP2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalTP2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalTP2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalTP2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalTP2DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalTP2DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalTP2DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalTP2DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarRedSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarRedSocial.Designer.cs">
+      <DependentUpon>modificarRedSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_usuario.Designer.cs">
+      <DependentUpon>modificar_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="altaRedSocial.resx">
+      <DependentUpon>altaRedSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alta_comentario.resx">
+      <DependentUpon>alta_comentario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alta_usuario.resx">
+      <DependentUpon>alta_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bajaRedSocial.resx">
+      <DependentUpon>bajaRedSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baja_usuario.resx">
+      <DependentUpon>baja_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultar_comentarios.resx">
+      <DependentUpon>consultar_comentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultar_usuarios.resx">
+      <DependentUpon>consultar_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarRedSocial.resx">
+      <DependentUpon>modificarRedSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_usuario.resx">
+      <DependentUpon>modificar_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="finalTP2DataSet.xsc">
+      <DependentUpon>finalTP2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalTP2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalTP2DataSet.xss">
+      <DependentUpon>finalTP2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet1.xsc">
+      <DependentUpon>finalTP2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalTP2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalTP2DataSet1.xss">
+      <DependentUpon>finalTP2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet2.xsc">
+      <DependentUpon>finalTP2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalTP2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalTP2DataSet2.xss">
+      <DependentUpon>finalTP2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet3.xsc">
+      <DependentUpon>finalTP2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalTP2DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalTP2DataSet3.xss">
+      <DependentUpon>finalTP2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet4.xsc">
+      <DependentUpon>finalTP2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="finalTP2DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalTP2DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalTP2DataSet4.xss">
+      <DependentUpon>finalTP2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
